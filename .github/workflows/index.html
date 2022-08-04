@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>坚持自律学习100天</title>
+    <link rel="stylesheet" href="./首页/Untitled-1.css">
+    <link rel="stylesheet" href="./首页/icomoon/style.css">
+    <link rel="stylesheet" href="./首页/css/Untitled-1a.css">
+    <meta name="color-scheme" content="light dark">   <!--声明当前页面支持 light 和 dark 两种模式-->
+    <link rel="shortcut icon" href="http://106.52.51.214/%E9%A6%96%E9%A1%B5/jpg/tubiao.ico" />
+    <script src="./首页/JS/pdsebei.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="http://106.52.51.214/%E9%A6%96%E9%A1%B5/%E8%AD%A6%E7%A4%BA%E6%A1%86%E7%BE%8E%E5%8C%96/sweetalert.css"> <!--警示框美化-->
+    <script type="text/javascript" src="http://106.52.51.214/%E9%A6%96%E9%A1%B5/%E8%AD%A6%E7%A4%BA%E6%A1%86%E7%BE%8E%E5%8C%96/sweetalert-dev.js"></script> <!--swal("这是标题！","这是文本")-->
+</head>
+<body>
+<div class="w">
+<div id="index_sy" style="overflow:hidden;transition: all 0.3s ease-out;">
+    <script>
+        var index_sy = document.querySelector('#index_sy')
+        yemian_xs = sessionStorage.getItem('yemian_xs') + ''
+        if(yemian_xs > 0){
+            index_sy.style.display = 'none'
+        }
+    </script>
+    <div class="Navbar">
+        <div class="tab_list">
+            <ul>
+                <li class="current">首页</li>
+                <li>圈子</li>
+                <li>社区</li>
+            </ul>
+        </div>
+        <div class="icon"><p class="i2" id="i2"></p></div>
+    </div>
+
+<div class="num" style="display: block;transform : scale(1);opacity:1">
+    <div class="box1">
+       <div class="box1a" id="enroll">
+           <a href="Javascript:;"  style="color: #000;" id="dlym_tz"><h3>未登录</h3></a>
+           <p>LV0&nbsp;(学沫)</p>
+       </div>
+
+       <div class="box1b">
+           <ul>
+               <li>
+                   <a href="Javascript:;" style="color: #000;"><h2 id="xuexizsc">0</h2></a>
+                   <span>本月学习总时长(时)</span>
+               </li>
+               <li>
+                   <a href="Javascript:;" style="color: #000;"><h2 id="xrxxsc">0</h2></a>
+                   <span>今日已学习(分钟)</span>
+               </li>
+               <li>
+                   <a href="Javascript:;" style="color: #000;"><h2 id="dakarq_a">0</h2></a>
+                   <span>本月已坚持打卡(天)</span>
+               </li>
+           </ul>
+       </div>
+    </div>
+
+    <div class="box2">
+        <ul>
+            <li id="jisq-dj"><a href="Javascript:;" class="moban"><span></span>
+                <p>番茄计时</p></a></li>
+            <li id="jiridaka_a"><a href="Javascript:;" class="a1"><span></span>
+                <p>每日打卡</p></a></li>
+            <li><a href="./首页/html/课程表.html" class="a2"><span></span>
+                <p>课程表</p></a></li>
+            <li><a href="./首页/html/倒数日.html" class="a3"><span></span>
+                <p>倒数日</p></a></li>
+        </ul>
+    </div>
+
+    <div class="daka">
+        
+        <h3>我的课程</h3>
+        <a href="./首页/html/课程表.html"><span class="daka_kechenka">课程卡</span> 
+        <ul class="daka_xinqi">
+            <li>
+                <span class="daka_riqi">周一</span>
+            </li>
+            <li>
+                <ul class="daka_biao">
+                    <li>
+                        <span>第一节</span>
+                        <p></p>
+                    </li>
+
+                    <li>
+                        <span>第二节</span>
+                        <p></p>
+                    </li>
+
+                    <li>
+                        <span>第三节</span>
+                        <p></p>
+                    </li>
+
+                    <li>
+                        <span>第四节</span>
+                        <p></p>
+                    </li>
+
+                    <li>
+                        <span>第五节</span>
+                        <p></p>
+                    </li>
+
+                    <li>
+                        <span>第六节</span>
+                        <p></p>
+                    </li>
+
+                    <li>
+                        <span>第七节</span>
+                        <p></p>
+                    </li>
+                    
+                </ul>
+            </li>
+        </ul>
+    </a>
+    </div>
+
+    <div class="daka"  id="xuexijishua" style="height: 20rem;">
+        <h3>学习计划</h3>
+        <div class="daka_wu">暂无相关数据</div>       
+    </div>
+
+    <div class="dibu_xc"></div>
+</div>
+
+<div class="num">
+    <div class="quanzi">
+        <ul id="qa">
+            <li>
+                <span></span>
+                <P>培训早教</P>
+            </li>
+            <li>
+                <span style="color: #fff; background-color: #ace3eb"></span>
+                <P>学习辅导</P>
+            </li>
+            <li>
+                <span style="color: #fefaa3;background-color: #ede3fb;"></span>
+                <P>疑问问题</P>
+            </li>
+            <li>
+                <span style="background-color: #d9f1fd;"></span>
+                <P>学习指标</P>
+            </li>
+            <li>
+                <span style="background-color: #fee7df;"></span>
+                <P>更多课程</P>
+            </li>
+        </ul>
+    </div>
+
+    <div class="boxa-1">
+        <p></p>
+        <h3>课堂圈子</h3>
+    </div>
+
+    <div class="boxa-1">
+        <p></p>
+        <h3>课堂达人</h3>
+
+        <div class="boxa-21" id="bax">
+            <span>加入圈子</span>
+        </div>
+    </div>
+
+    <div class="boxa-2"> 
+        <h4>同学圈子</h4>
+    </div>
+</div>
+
+<div class="num">
+    <div style="width: 100%; height: 70%; font-size: 2.6rem; margin:50% 10px;color: #000;">该页面制作中，敬请期待。</div>
+ </div>   
+
+</div>
+
+<iframe name="iframe0" marginwidth=0 marginheight=0 width='100%' height='100%'
+style="position:fixed;left: 100%;top: 0;;z-index: 9;"  src="http://106.52.51.214/%E9%A6%96%E9%A1%B5/html/更多设置.html" frameborder=0 id="gd_szzj"></iframe>
+
+ <iframe name="iframe1" marginwidth=0 marginheight=0 width='100%' height='100%'
+style="position:absolute;left: 0%;top: 0;;z-index: 2;"  src="http://106.52.51.214/%E9%A6%96%E9%A1%B5/html/index3.html" id="index_gh"
+frameborder=0></iframe>
+
+<iframe name="iframe2" marginwidth=0 marginheight=0 width='100%' height='100%' 
+style="position:absolute;left: 0%;top: 0;;z-index: 2;"  src="http://106.52.51.214/%E9%A6%96%E9%A1%B5/html/index2.html" id="index_mb"
+frameborder=0></iframe>
+
+<iframe name="iframe3" marginwidth=0 marginheight=0 width='100%' height='100%' 
+style="position:absolute;left: 0%;top: 0;;z-index: 2;"  src="http://106.52.51.214/%E9%A6%96%E9%A1%B5/html/index4.html" id="index_wd"
+frameborder=0></iframe>
+
+<div class="dinsq" style="display: none;"></div>
+<div class="dinsq-a" style="display: none;">
+    <h2 id="biaoti-a">番茄计时器</h2>
+    <i></i>
+    <h4 id="kaishisj-a" style="font-size:1.5rem;">开始时间：</h4>
+    <p id="shijian-a">00:00:00</p>
+    <i style="top: 20.6rem"></i>
+    <h4 id="jiezhisj_a" style="top: 20.2rem;font-size:1.5rem;">截止时间：</h4>
+    <button class="kaishi-a">开始计时</button>
+    <button class="zhongzhi-a">终止计时器</button>
+</div>
+
+<div id="zjzzc_a" style=" opacity: 0.5; background-color: #666 ;width: 100%; height: 100%; position: fixed;top: 0;left: 0; z-index: 97;display: none;"></div>
+
+<div id="calendarElement">  <!-- 日历 -->
+    <div class="header">
+     <div class="prev">
+      <i class="previ"></i>
+     </div>
+     <div class="date"></div>
+     <div class="next">
+      <i class="nexti"></i>
+     </div>
+    </div>
+    <div class="content">
+     <div class="week">
+      <div>日</div>
+      <div>一</div>
+      <div>二</div>
+      <div>三</div>
+      <div>四</div>
+      <div>五</div>
+      <div>六</div>
+     </div>
+     <div class="weekMany clearfloat">
+     </div>
+    </div>
+   </div>
+
+    <div class="foot">
+        <ul id="dibu_sy">
+            <li><a href="Javascript:;" class="f1">
+                <i class="f-2" id="dibu_ys_i"></i>
+                <span></span>
+                <p>首页</p>
+            </a></li>
+            <li><a href="Javascript:;" class="f2">
+                <i id="dibu_ys_i"></i>
+                <span></span>
+                <p>规划</p>
+            </a></li>
+            <li><a href="Javascript:;" class="f3">
+                <i id="dibu_ys_i"></i>
+                <span></span>
+                <p>模板</p>
+            </a></li>
+            <li><a href="Javascript:;" class="f4">
+                <i id="dibu_ys_i"></i>
+                <span></span>
+                <p>我的</p>
+            </a></li>
+        </ul>
+    </div>
+    
+</div>
+<script src="./首页/JS/index.js"></script>
+<script src="./首页/JS/深色模式.js"></script>
+</body>
+<script src="./首页/JS/rili.js"></script>
+<script src="./首页/JS/TZ.js"></script>
+<script>
+var index_sy = document.querySelector('#index_sy')
+var index_gh = document.querySelector('#index_gh')
+var index_mb = document.querySelector('#index_mb')
+var index_wd = document.querySelector('#index_wd')
+var dibu_sy = document.querySelector('#dibu_sy')
+var dibu_sy_li = dibu_sy.querySelectorAll('li')
+var dibu_ys_i = document.querySelectorAll('#dibu_ys_i')
+var dlym_tz = document.querySelector('#dlym_tz')
+var xuexizsc = document.querySelector('#xuexizsc')
+var xrxxsc = document.querySelector('#xrxxsc')
+var dibu_ys;
+function ck_xs(){
+    index_sy.style.display = 'none'
+    index_gh.style.display = 'none'
+    index_mb.style.display = 'none'
+    index_wd.style.display = 'none'
+}
+function ymqh_dh(){
+    index_sy.style.transform = 'scaleX(0.95)';
+    index_sy.style.opacity = '0';
+    index_gh.style.transform = 'scaleX(0.95)'
+    index_gh.style.opacity = '0';
+    index_mb.style.transform = 'scaleX(0.95)'
+    index_mb.style.opacity = '0';
+    index_wd.style.transform = 'scaleX(0.95)'
+    index_wd.style.opacity = '0';
+}
+yemian_xs = sessionStorage.getItem('yemian_xs') + ''
+yemian_xs < 0 ? sessionStorage.setItem('yemian_xs',0) : 0
+function xs_sy0(){
+    setTimeout(function() {
+        ck_xs()
+        sessionStorage.setItem('yemian_xs',0)
+        index_sy.style.display = 'block'
+    }, 301);
+    setTimeout(function() {
+        index_sy.style.transform = 'scale(1)';
+        index_sy.style.opacity = '1';
+    }, 310);
+}
+var sylb_flag;
+setInterval(function(){
+    sylb_flag = 'true'
+},1000)
+dibu_sy_li[0].addEventListener('click',function(){
+   if(sylb_flag == 'true'){
+       ymqh_dh()
+       xs_sy0()  
+       document.title = '坚持学习100天' 
+       xxdbys()
+       dibu_ys_i[0].classList.add('f-2')
+   } 
+})
+dibu_sy_li[1].addEventListener('click',function(){
+    if(sylb_flag == 'true'){
+        ymqh_dh()
+        xs_gh1()   
+        document.title = '学习计划' 
+        xxdbys()
+        dibu_ys_i[1].classList.add('f-2')
+    }
+})
+dibu_sy_li[2].addEventListener('click',function(){
+    if(sylb_flag == 'true'){
+        ymqh_dh()
+        xs_mb2()
+        document.title = '网页模板'
+        xxdbys()
+        dibu_ys_i[2].classList.add('f-2')
+    }
+})
+dibu_sy_li[3].addEventListener('click',function(){
+    if(sylb_flag == 'true'){
+        ymqh_dh()
+        xs_wd3()
+        document.title = '我的'
+        xxdbys()
+        dibu_ys_i[3].classList.add('f-2')
+    }
+})
+
+xuexizsc.addEventListener('click',function(){
+    ymqh_dh()
+    xs_gh1()   
+    document.title = '学习计划' 
+    xxdbys()
+    dibu_ys_i[1].classList.add('f-2')
+})
+xrxxsc.addEventListener('click',function(){
+    ymqh_dh()
+    xs_gh1()   
+    document.title = '学习计划' 
+    xxdbys()
+    dibu_ys_i[1].classList.add('f-2')
+})
+dlym_tz.addEventListener('click',function(){
+    ymqh_dh()
+    xs_wd3()
+    xxdbys()
+    document.title = '我的'
+    dibu_ys_i[3].classList.add('f-2')
+})
+
+function xs_gh1(){
+    setTimeout(function() {
+        ck_xs()
+        sessionStorage.setItem('yemian_xs',1)
+        index_gh.style.display = 'block'
+    }, 301);
+    setTimeout(function() {
+        index_gh.style.transform = 'scale(1)';
+        index_gh.style.opacity = '1';
+    }, 310);
+}
+
+function xs_mb2(){
+    setTimeout(function() {
+        ck_xs()
+        sessionStorage.setItem('yemian_xs',2)
+        index_mb.style.display = 'block'
+    }, 301);
+    setTimeout(function() {
+        index_mb.style.transform = 'scale(1)';
+        index_mb.style.opacity = '1';
+    }, 310);
+}
+
+
+function xs_wd3(){
+    setTimeout(function() {
+        ck_xs()
+        sessionStorage.setItem('yemian_xs',3)
+        index_wd.style.display = 'block'
+    }, 301);
+    setTimeout(function() {
+        index_wd.style.transform = 'scale(1)';
+        index_wd.style.opacity = '1';
+    }, 310);
+}
+
+function xxdbys(){ //清除底部列表样式
+    for(var i = 0;i < dibu_ys_i.length ;i++){
+        dibu_ys_i[i].classList.remove('f-2')
+    }
+}
+    if(yemian_xs == 0){ //刷新进入的页面
+        ck_xs()
+        index_sy.style.transition = 'all 0.3s ease-out'
+        index_sy.style.display = 'block'
+        ymqh_dh()  
+        index_sy.style.transform = 'scale(1)';
+        index_sy.style.opacity = '1';
+        xxdbys()
+        document.title = '坚持学习100天'
+        dibu_ys_i[yemian_xs].classList.add('f-2')
+    }else if(yemian_xs == 1){
+        ymqh_dh()
+        index_gh.style.transition = 'all 0.3s ease-out'
+        index_gh.style.display = 'block'
+        xs_gh1()    
+        xxdbys()
+        index_gh.style.transform = 'scale(1)';
+        index_gh.style.opacity = '1';
+        document.title = '学习计划'
+        dibu_ys_i[yemian_xs].classList.add('f-2')
+    }else if(yemian_xs == 2){
+        ymqh_dh()
+        index_mb.style.transition = 'all 0.3s ease-out'
+        index_mb.style.display = 'block'
+        xs_mb2()
+        xxdbys()
+        index_mb.style.transform = 'scale(1)';
+        index_mb.style.opacity = '1';
+        document.title = '网页模板'
+        dibu_ys_i[yemian_xs].classList.add('f-2')
+    }else if(yemian_xs == 3){
+        ymqh_dh()
+        index_wd.style.transition = 'all 0.3s ease-out'
+        index_wd.style.display = 'block'
+        xs_wd3()
+        xxdbys()
+        index_wd.style.transform = 'scale(1)';
+        index_wd.style.opacity = '1';
+        document.title = '我的'
+        dibu_ys_i[yemian_xs].classList.add('f-2')
+    }
+
+var b = document.getElementById('xuexijishua')
+xuexijishua.onclick = function(){
+    swal("正在抓紧开发中",'就快做完了(右键新建文件夹)')
+}
+
+var qa = document.getElementById('qa')
+qa.onclick = function(){
+    swal("正在抓紧开发中",'就快做完了(右键新建文件夹)')
+}
+
+var bax = document.getElementById('bax')
+bax.onclick = function(){
+    swal("正在抓紧开发中",'就快做完了(右键新建文件夹)')
+}
+
+window.addEventListener('load', function() {
+    function zymys() {
+        window.frames['iframe1'].document.getElementById("dbxs").style.display = 'none'
+        window.frames['iframe2'].document.getElementById("dbxs").style.display = 'none'
+        window.frames['iframe3'].document.getElementById("dbxs").style.display = 'none'
+    }
+    if(yemian_xs == 0){ //刷新进入的页面
+        zymys()
+    }else if(yemian_xs == 1){
+        zymys()
+        setTimeout(function() {
+            window.frames['iframe1'].document.getElementById("dbxs").style.display = 'block'
+        }, 610);
+    }else if(yemian_xs == 2){
+        zymys()
+        setTimeout(function() {
+            window.frames['iframe2'].document.getElementById("dbxs").style.display = 'block'
+        }, 610);
+    }else if(yemian_xs == 3){
+        zymys()
+        setTimeout(function() {
+            window.frames['iframe3'].document.getElementById("dbxs").style.display = 'block'
+        }, 610);
+    }
+    dibu_sy_li[0].addEventListener('click',function(){
+        if(sylb_flag == 'true'){
+            zymys()
+        }
+    })
+    dibu_sy_li[1].addEventListener('click',function(){
+        if(sylb_flag == 'true'){
+            zymys()
+            setTimeout(function() {
+                window.frames['iframe1'].document.getElementById("dbxs").style.display = 'block'
+            }, 610);
+        }
+    })
+    dibu_sy_li[2].addEventListener('click',function(){
+        if(sylb_flag == 'true'){
+            zymys()
+            setTimeout(function() {
+                window.frames['iframe2'].document.getElementById("dbxs").style.display = 'block'
+            }, 610);
+        }
+    })
+    dibu_sy_li[3].addEventListener('click',function(){
+        if(sylb_flag == 'true'){
+            zymys()
+            setTimeout(function() {
+                window.frames['iframe3'].document.getElementById("dbxs").style.display = 'block'
+            }, 610);
+        }
+    })
+    for(var i = 0;i < dibu_ys_i.length ;i++){
+        dibu_sy_li[i].setAttribute('dibu_mun',i)
+        dibu_sy_li[i].addEventListener('click',function(){
+            if(sylb_flag == 'true'){
+                zymys()
+                sylb_flag = 'false'
+                for(var i = 0;i < dibu_ys_i.length ;i++){
+                    dibu_ys_i[i].classList.remove('f-2')
+                    dibu_ys = this.getAttribute('dibu_mun')
+                    dibu_ys_i[dibu_ys].classList.add('f-2')
+                    pb_yjms()
+                }
+            }
+        })
+    }
+})
+
+var tab_list = document.querySelector('.tab_list');
+var lis = tab_list.querySelectorAll('li');
+var num = document.querySelectorAll('.num');
+var sy_fh = 0
+sy_gdhz = 0
+for(var i = 0;i < lis.length;i++){
+    lis[i].setAttribute('index',i)
+    lis[i].onclick = function(){
+        for(var i = 0;i < lis.length;i++){
+            lis[i].className = '' 
+            setTimeout(function() {
+                num[sy_gdhz].style.display = 'none';
+            }, 310);
+            num[sy_gdhz].style.transform = 'scale(0.95)';
+            num[sy_gdhz].style.opacity = '0';
+        }
+        this.className = 'current'
+        sy_index = this.getAttribute('index')
+        setTimeout(function() {
+            sy_gdhz = sy_index
+            num[sy_index].style.display = 'block'
+        }, 311);
+        setTimeout(function() {
+            sy_ggdgqh()
+        }, 325);
+
+        history.pushState(null, null, "#1")
+        history.pushState(null, null, "#");//用户返回执行的代码
+        window.onhashchange = function(event) {
+            //需要执行的代码
+            for(var i = 0; i < lis.length;i++){
+                num[i].style.display = 'none'
+                lis[i].className = '' 
+            }
+            sy_gdhz = 0
+            num[0].style.display = 'block'
+            lis[0].className = 'current'
+            num[0].style.transform = 'scale(1)';
+            num[0].style.opacity = '1'
+            sy_fh = parseInt(sy_fh) + parseInt(1)
+            if(sy_fh >= 2){
+                history.go(-1);
+            }
+        }
+    }
+   
+}
+
+function sy_ggdgqh(){
+    num[sy_index].style.opacity = '1';
+    num[sy_index].style.transform = 'scale(1)';
+}
+
+var daka_xinqi = document.querySelector('.daka_xinqi')
+var daka_xinqi_span = daka_xinqi.querySelector('span')
+daka_xinqi_span.innerHTML = getCurrentDate()
+var daka_biao = document.querySelector('.daka_biao')
+var daka_biao_p = daka_biao.querySelectorAll('p')
+if(getCurrentDate() == '周一'){
+    for(var i = 0;i < 7;i++){
+        daka_biao_p[i].innerHTML = localStorage.getItem('kechenbiao' + i * 7)
+        if(daka_biao_p[i].innerHTML.length == 0){
+            daka_biao_p[i].innerHTML = '无课程安排'
+        }
+    }
+}else if(getCurrentDate() == '周二'){
+    for(var i = 0;i < 7;i++){
+        daka_biao_p[i].innerHTML = localStorage.getItem('kechenbiao' + (i * 7 + 1))
+        if(daka_biao_p[i].innerHTML.length == 0){
+            daka_biao_p[i].innerHTML = '无课程安排'
+        }
+    }
+}else if(getCurrentDate() == '周三'){
+    for(var i = 0;i < 7;i++){
+        daka_biao_p[i].innerHTML = localStorage.getItem('kechenbiao' + (i * 7 + 2))
+        if(daka_biao_p[i].innerHTML.length == 0){
+            daka_biao_p[i].innerHTML = '无课程安排'
+        }
+    }
+}else if(getCurrentDate() == '周四'){
+    for(var i = 0;i < 7;i++){
+        daka_biao_p[i].innerHTML = localStorage.getItem('kechenbiao' + (i * 7 + 3))
+        if(daka_biao_p[i].innerHTML.length == 0){
+            daka_biao_p[i].innerHTML = '无课程安排'
+        }
+    }
+}else if(getCurrentDate() == '周五'){
+    for(var i = 0;i < 7;i++){
+        daka_biao_p[i].innerHTML = localStorage.getItem('kechenbiao' + (i * 7 + 4))
+        if(daka_biao_p[i].innerHTML.length == 0){
+            daka_biao_p[i].innerHTML = '无课程安排'
+        }
+    }
+}else if(getCurrentDate() == '周六'){
+    for(var i = 0;i < 7;i++){
+        daka_biao_p[i].innerHTML = localStorage.getItem('kechenbiao' + (i * 7 + 5))
+        if(daka_biao_p[i].innerHTML.length == 0){
+            daka_biao_p[i].innerHTML = '无课程安排'
+        }
+    }
+}else if(getCurrentDate() == '周日'){
+    for(var i = 0;i < 7;i++){
+        daka_biao_p[i].innerHTML = localStorage.getItem('kechenbiao' + (i * 7 + 6))
+        if(daka_biao_p[i].innerHTML.length == 0){
+            daka_biao_p[i].innerHTML = '无课程安排'
+        }
+    }
+}
+
+var kaishisj_a = document.querySelector('#kaishisj-a')
+var kaishi_a = document.querySelector('.kaishi-a')
+var zhongzhi_a = document.querySelector('.zhongzhi-a')
+var shijian_a = document.querySelector('#shijian-a')
+var jiezhisj_a = document.querySelector('#jiezhisj_a')
+var dinsq = document.querySelector('.dinsq')
+var dinsq_a = document.querySelector('.dinsq-a')
+var jisq_dj = document.querySelector('#jisq-dj')
+var biaoti_a = document.querySelector('#biaoti-a')
+var zjzzc_a = document.querySelector('#zjzzc_a')
+var zhuijia1_a = document.querySelector('.zhuijia1_a')
+var quxiao_a = document.querySelector('.quxiao_a')
+var myDate = Date.parse(new Date())
+localStorage.getItem('flag_a') == 0 ? kaishi_a.disabled = true : 0; 
+localStorage.getItem('flag_a') != 0 ? zhongzhi_a.disabled = true : 0;
+pd_a()
+function pd_a(){ //判断本地缓存是否为空
+    localStorage.getItem('xuexizsc') == null ? localStorage.setItem('xuexizsc',0) : 0;
+    localStorage.getItem('benria') == null ? localStorage.setItem('benria',0) : 0;
+    localStorage.getItem('xuexizsc') == NaN ? localStorage.setItem('xuexizsc',0) : 0;
+    localStorage.getItem('benria') == NaN ? localStorage.setItem('benria',0) : 0;
+    localStorage.getItem('xuexizsc') == NaN ? localStorage.setItem('xuexizsc',0) : 0;
+    localStorage.getItem('dakariqi') == NaN ? localStorage.setItem('dakariqi',0) : 0;
+    localStorage.getItem('dakariqi') == null ? localStorage.setItem('dakariqi',0) : 0;
+    localStorage.getItem('jiridakasj_a') == NaN ? localStorage.setItem('jiridakasj_a',0) : 0;
+    localStorage.getItem('jiridakasj_a') == null ? localStorage.setItem('jiridakasj_a',0) : 0;
+}
+jisq_dj.addEventListener('click',function(){ //点击显示计时器
+    dinsq.style.zIndex = '9'
+    dinsq.style.display = 'block'
+    dinsq_a.style.display = 'block'
+
+    history.pushState(null, null, "#1")
+    history.pushState(null, null, "#");//用户返回执行的代码
+    window.onhashchange = function(event) {
+        //需要执行的代码
+        dinsq.style.display = 'none'
+        dinsq_a.style.display = 'none'
+        sy_fh = parseInt(sy_fh) + parseInt(1)
+        if(sy_fh >= 2){
+            history.go(-1);
+        }
+    }
+})
+
+dinsq.addEventListener('click',function(){ //点击背景隐藏计时器
+    dinsq.style.display = 'none'
+    dinsq_a.style.display = 'none'
+    zjzzc_a.style.display = 'none'
+})
+
+jishiqi_a()
+kaishi_a.addEventListener('click',function(){ //点击开始计时
+        var myDate = Date.parse(new Date()) //获取当前时间戳
+        localStorage.setItem('flag_a',0) //存储判断条件 
+        kaishi_a.innerHTML = '开始计时' 
+        kaishisj_a.innerHTML = '开始时间：' + dasja
+        localStorage.setItem('kaishisj_a',kaishisj_a.innerHTML)
+        localStorage.setItem('senyusj-a',myDate) //存储 点击 开始计时器时的时间戳
+        zhongzhi_a.disabled = false //取消禁用结束按钮
+        jishiqi_a()
+})
+
+function jsq_sy(){ //提交计时器数据时 更新本地缓存数据
+    pd_a()
+    localStorage.setItem('benria',parseFloat(localStorage.getItem('benria')) + parseFloat(myDate_f) + ((parseFloat(myDate_h) * 60) +  (parseFloat(myDate_t) * 24 * 60)))
+    localStorage.setItem('xuexizsc',parseFloat(localStorage.getItem('xuexizsc')) + parseFloat(myDate_f) + ((parseFloat(myDate_h) * 60) +  (parseFloat(myDate_t) * 24 * 60)))
+}
+
+zhongzhi_a.addEventListener('click',function(){//点击结束计时器按钮时
+    if(localStorage.getItem('flag_a') == 0){
+        localStorage.setItem('flag_a',1)
+        shijian_a.innerHTML = '00:00:00'
+        jiezhisj_a.innerHTML = '截止时间：' + dasja
+        kaishi_a.disabled = false //取消禁用开始按钮
+        clearInterval(jishiqi_a1) //删除网页计时器
+        shijian_a.innerHTML = myDate_t + ':' + myDate_h + ':' + myDate_f + ':' + myDate_m
+        swal({ 
+            title: "是否保存学习进度？", 
+            text: '您本次一共学习了：' + (parseFloat(myDate_f) + (parseFloat(myDate_h) * 60)+  (parseFloat(myDate_t) * 24 * 60)) + '分钟', 
+            // type: "warning",
+            showCancelButton: true, 
+            confirmButtonColor: "#DD6B55",
+            confirmButtonText: "确定提交！", 
+            cancelButtonText: "寄！",
+            closeOnConfirm: false, 
+            closeOnCancel: false,	
+            },
+            function(isConfirm){ 
+            if (isConfirm) { 
+                jsq_sy()    
+                swal("保存！", "已计入当月学习总时间",
+                "success");          
+            } else { 
+                swal("不保存！", "该任务不计入时间",
+                "error");  
+            }
+        })
+    }
+    localStorage.getItem('flag_a') == 0 ? kaishi_a.disabled = true : 0; //更新按钮状态
+    localStorage.getItem('flag_a') != 0 ? zhongzhi_a.disabled = true : 0;
+})
+
+function jishiqi_a(){
+    if(localStorage.getItem('flag_a') == 0){
+        jishiqi_a1 = setInterval(function() { //每隔1秒重新计算 更新页面元素
+            var myDate = Date.parse(new Date())
+            myDate_t = parseInt(((((myDate - localStorage.getItem('senyusj-a')) / 1000) / 60) / 60) / 24)
+            myDate_h = parseInt((((myDate - localStorage.getItem('senyusj-a')) / 1000) / 60) / 60)
+            myDate_f = parseInt(((myDate - localStorage.getItem('senyusj-a')) / 1000) / 60)
+            myDate_m = (myDate - localStorage.getItem('senyusj-a')) / 1000 
+            myDate_m >= 60 ? myDate_m = myDate_m - (myDate_f * 60) : myDate_m;
+            myDate_f >= 60 ? myDate_f = myDate_f - (myDate_h * 60) : myDate_f;
+            myDate_h >= 24 ? myDate_h = myDate_h - (myDate_t * 24) : myDate_h;
+            
+            String(myDate_m).length == 1 ? myDate_m = '0' + myDate_m : myDate_m //个位数时前面补 0
+            String(myDate_f).length == 1 ? myDate_f = '0' + myDate_f : myDate_f
+            String(myDate_h).length == 1 ? myDate_h = '0' + myDate_h : myDate_h
+            shijian_a.innerHTML = myDate_t + ':' + myDate_h + ':' + myDate_f + ':' + myDate_m
+
+            localStorage.getItem('flag_a') == 0 ? kaishi_a.disabled = true : 0;
+            localStorage.getItem('flag_a') != 0 ? zhongzhi_a.disabled = true : 0;
+        }, 1000);
+    }
+}
+localStorage.getItem('flag_a') == 0 ? kaishisj_a.innerHTML = localStorage.getItem('kaishisj_a') : 0;
+
+var jiridaka_a = document.querySelector('#jiridaka_a')
+var dakarq_a = document.querySelector('#dakarq_a')
+var jrdakasj_a0;
+var qdbq_cg;
+var slanniu;
+function qdjm_sy(){
+    jrdakasj_a0 = '确定在' + dqsjz + '打卡?'
+    anckibhadcu = '签到'
+    slanniu = ''
+    localStorage.getItem('jiridakasj_a') != 0 ? jrdakasj_a0 = '本日已打卡' : localStorage.getItem('jiridakasj_a');
+    localStorage.getItem('jiridakasj_a') != 0 ? anckibhadcu = '已签到' : localStorage.getItem('jiridakasj_a');
+    localStorage.getItem('jiridakasj_a') != 0 ? slanniu = '' : slanniu = 'true'
+    swal({ 
+		title: "今日打卡", 
+		text: jrdakasj_a0, 
+		// type: "warning",
+		showCancelButton: slanniu, 
+		confirmButtonColor: "#8cd4f5",
+		confirmButtonText: anckibhadcu, 
+		cancelButtonText: "算了",
+		closeOnConfirm: true, 
+		closeOnCancel: true,	
+		},
+		function(isConfirm){ 
+		if (isConfirm) { 
+        mrdksy_qd()
+		} else { 
+		} 
+    })
+}
+jiridaka_a.addEventListener('click',function(){ //点击显示打卡界面
+    qdjm_sy()
+})
+localStorage.getItem('jinrisj') == dqsjz ? localStorage.getItem('jiridakasj_a'):localStorage.setItem('jiridakasj_a',0) ;
+var buqian_A;
+var buqianyqd_a;
+var qiandaorili_a;
+function mrdksy_qd(){
+    if(buqian_A == 1){
+        buqian_A = 2
+        qdjm_sy()
+    }else if(buqian_A == 0){
+        buqian_A = 2
+        localStorage.setItem('qdrl'+ thiswz,thiswz)
+        localStorage.setItem('dakariqi',parseInt(localStorage.getItem('dakariqi')) + 1)
+        qdjm_sy()
+        location.reload(true)
+    }else if(buqianyqd_a == 1){
+        buqianyqd_a = 0
+        qdjm_sy()
+    }else if(localStorage.getItem('jiridakasj_a') == 0){
+        buqian_A = 2
+        qdjm_sy()
+        localStorage.setItem('jiridakasj_a',parseInt(localStorage.getItem('jiridakasj_a')) + 1) //改变判断条件
+        localStorage.setItem('dakariqi',parseInt(localStorage.getItem('dakariqi')) + 1) //更新存储当月打卡次数
+        dakarq_a.innerHTML = localStorage.getItem('dakariqi')
+        myDate_a = new Date();
+        day_a = myDate_a.getDate(); //日
+        localStorage.setItem('qdrl'+ day_a,day_a) //存储打卡当日 日期
+        location.reload(true)
+    }else{
+        qdjm_sy()
+    }
+}
+
+dakarq_a.innerHTML = localStorage.getItem('dakariqi')
+
+var xuexizsc = document.querySelector('#xuexizsc')
+var xrxxsc = document.querySelector('#xrxxsc')
+function jinria(shanchu,bendi,x,yemian){
+    localStorage.removeItem(shanchu)
+    localStorage.setItem(bendi,dqsjz.substr(0, x)) //截取字符
+    yemian.innerHTML = Math.ceil(localStorage.getItem(bendi))
+}
+var dqsj3 = dqsjz.substr(0, 7)
+if(localStorage.getItem('jinrisja') != dqsj3){//打卡记录 清除
+    for(var i = 0;i < 31;i++){
+        localStorage.removeItem('qdrl'+ i)  //格式化当月打卡日期
+    }
+}
+localStorage.getItem('jinrisja') == dqsj3 ? localStorage.getItem('dakariqi'): localStorage.setItem('dakariqi',0)
+localStorage.getItem('jinrisj') == dqsjz ? xrxxsc.innerHTML = Math.ceil(localStorage.getItem('benria')) : jinria('benria','jinrisj',dqsjz.length,'xrxxsc')
+localStorage.getItem('jinrisja') == dqsj3 ? xuexizsc.innerHTML = Math.ceil(localStorage.getItem('xuexizsc') / 60) : jinria('xuexizsc','jinrisja',7,'xuexizsc')
+localStorage.getItem('jinrisja') == dqsj3 ? console.log('不清除打卡记录') : dakajilu_a();
+dakarq_a.innerHTML = localStorage.getItem('dakariqi')
+setInterval(function() {
+    localStorage.getItem('jinrisj') == dqsjz ? localStorage.getItem('jiridakasj_a'):localStorage.setItem('jiridakasj_a',0) ;
+    localStorage.getItem('jinrisja') == dqsj3 ? localStorage.getItem('dakariqi'): localStorage.setItem('dakariqi',0)
+    localStorage.getItem('jinrisj') == dqsjz ? xrxxsc.innerHTML = Math.ceil(localStorage.getItem('benria')) : jinria('benria','jinrisj',dqsjz.length,'xrxxsc')
+    localStorage.getItem('jinrisja') == dqsj3 ? xuexizsc.innerHTML = Math.ceil(localStorage.getItem('xuexizsc') / 60) : jinria('xuexizsc','jinrisja',7,'xuexizsc')
+
+    localStorage.getItem('jinrisj') == dqsjz ? xrxxsc.innerHTML = Math.ceil(localStorage.getItem('benria')) : jinria('benria','jinrisj',dqsjz.length,'xrxxsc')
+    //判断日期
+    localStorage.getItem('jinrisja') == dqsj3 ? xuexizsc.innerHTML = Math.ceil(localStorage.getItem('xuexizsc') / 60) : jinria('xuexizsc','jinrisja',7,'xuexizsc')
+    //判断月份
+},1000)
+
+dakarq_a.addEventListener('click',function(){//点击显示日历
+    zjzzc_a.style.zIndex = '97'
+    zjzzc_a.style.display = 'block'
+    dom.style.display = 'block' 
+
+    history.pushState(null, null, "#1")
+    history.pushState(null, null, "#");//用户返回执行的代码
+    window.onhashchange = function(event) {
+        //需要执行的代码
+           buqian_A = 2
+           zjzzc_a.style.display = 'none'
+           dom.style.display = 'none' 
+           daka_a.style.display = 'none'
+
+           sy_fh = parseInt(sy_fh) + parseInt(1)
+           if(sy_fh >= 2){
+               history.go(-1);
+           }
+    }
+})
+
+zjzzc_a.addEventListener('click',function(){ //点击背景隐藏界面
+       buqian_A = 2
+       zjzzc_a.style.display = 'none'
+       dom.style.display = 'none' 
+})
+
+prev.addEventListener('click',function(){ //点击下月或上月时 判断是否为当前月份 是的话改变签到日期颜色
+   sxrl()
+   setTimeout(function(){
+        qiandaodk_a()
+    },20)
+})
+next.addEventListener('click',function(){
+   sxrl()
+   setTimeout(function(){
+       qiandaodk_a()
+    },20)
+})
+function qiandaodk_a(){
+    for(var i = 0;i < thisMonth_day.length;i++){
+        thisMonth_day[i].addEventListener('click',function(){
+           if(Math.ceil(this.innerHTML) < today){
+              thiswz = Math.ceil(this.innerHTML)
+              localStorage.getItem('qdrl' + this.innerHTML) > 0 ? buqian_a() : buqian_a1()
+           }else if(Math.ceil(this.innerHTML) == today){
+              thiswz = Math.ceil(this.innerHTML)
+              localStorage.getItem('qdrl' + today) == this.innerHTML ? buqian_a() : buqian_a1()
+           }else{
+             thiswz = this.innerHTML
+             buqian_a2()
+           }
+        })
+    }
+}
+qiandaodk_a()
+
+function qdjmbq_sy(){
+    jrdakasj_a0 = month + '月' + thiswz + '日已签到 ' + ' 不可补签'
+    anckibhadcu = '已签到'
+    qdbq_cg + '' == 'true' ? jrdakasj_a0 = '是否补签' + month + '月' + thiswz + '日签到记录' : 0
+    qdbq_cg + '' == 'true' ? anckibhadcu = '补签': 0
+    swal({ 
+		title: '是否补签?(不推荐使用该功能)', 
+		text: jrdakasj_a0, 
+		// type: "warning",
+		showCancelButton: qdbq_cg + '', 
+		confirmButtonColor: "#8cd4f5",
+		confirmButtonText: anckibhadcu, 
+		cancelButtonText: "算了",
+		closeOnConfirm: true, 
+		closeOnCancel: true,	
+		},
+		function(isConfirm){ 
+		if (isConfirm) { 
+        mrdksy_qd()
+		} else { 
+		} 
+    })
+}
+function buqian_a(){
+    if(localStorage.getItem('qdrl' + today) == thiswz){
+        qdjm_sy()
+    }
+    else if(localStorage.getItem('qdrl' + thiswz) == thiswz){
+      buqianyqd_a = 1
+      qdbq_cg = ''
+      qdjmbq_sy()
+   }
+}
+
+function buqian_a1(){
+    if(today == thiswz){
+        qdjm_sy()
+    }else{
+        buqian_A = 0
+        qdbq_cg = 'true'
+        qdjmbq_sy()
+    }
+}
+
+function buqian_a2(){
+    buqian_A = 1
+    swal({ 
+		title: '未到签到日期', 
+		text: '无法签到', 
+		// type: "warning",
+		// showCancelButton: true, 
+		confirmButtonColor: "#8cd4f5",
+		confirmButtonText: '返回', 
+		// cancelButtonText: "取消删除！",
+		closeOnConfirm: true, 
+		closeOnCancel: true,	
+		},
+		function(isConfirm){ 
+		if (isConfirm) { 
+        mrdksy_qd()
+		} else { 
+        mrdksy_qd()
+		} 
+    })
+}
+
+dsjc_gd(index_sy)
+dsjc_gd(index_gh)
+dsjc_gd(index_mb)
+dsjc_gd(index_wd)
+function dsjc_gd(mun){
+    mun.style.height = (window.innerHeight / 10) + 'rem'
+}
+
+i2.addEventListener('click',function(){
+    let gdsz_sy1 = document.querySelector('#gd_szzj')
+    gdsz_sy1.style.zIndex = '9'
+})
+
+if(window.innerWidth < 320){
+    swal("该设备可视窗口小于320px","请更换设备打开此网页" + '\n' + '当前设备屏幕宽度为' + window.innerWidth + 'px')
+    document.body.appendChild(new_element);
+}
+</script>
+</html>
